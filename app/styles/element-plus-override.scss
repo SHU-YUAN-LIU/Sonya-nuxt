@@ -1,0 +1,86 @@
+:root {
+  --el-color-primary: #cc7a60;
+  --el-color-warning: #f59e0b;
+  --el-border-radius-base: 0.625rem;
+  --el-border-color: #8b929e;
+  --el-fill-color-blank: #ffffff;
+}
+
+.dark {
+  --el-color-primary: #d99178;
+  --el-color-warning: #f59e0b;
+  --el-border-color: #606068;
+  --el-fill-color-blank: #111111;
+}
+
+.el-input {
+  --el-input-focus-border-color: var(--primary) !important;
+  --el-input-focus-border: var(--primary) !important;
+}
+
+.el-button--primary {
+  color: var(--primary-foreground) !important;
+  background-color: var(--primary) !important;
+  border-color: var(--primary) !important;
+
+  &:hover {
+    opacity: 0.9 !important;
+    background-color: var(--primary) !important;
+    border-color: var(--primary) !important;
+  }
+
+  &.is-disabled,
+  &[disabled] {
+    opacity: 0.5 !important;
+    cursor: not-allowed !important;
+  }
+}
+
+.el-button--primary.is-plain {
+  color: var(--primary) !important;
+  background-color: transparent !important;
+  border-color: var(--primary) !important;
+
+  &:hover {
+    background-color: var(--primary) !important;
+    color: var(--primary-foreground) !important;
+  }
+}
+
+.el-table {
+  --el-table-border-color: var(--border) !important;
+  --el-table-header-bg-color: var(--muted) !important;
+  --el-table-row-hover-bg-color: var(--muted) !important;
+  font-family: 'JetBrains Mono', monospace !important;
+}
+
+.el-table--fit {
+  border-radius: 0.625rem;
+  border: 1px solid var(--border);
+  font-size: 15px !important;
+  overflow: hidden;
+}
+
+.el-table th {
+  background-color: var(--muted) !important;
+}
+
+.el-table thead th {
+  font-weight: 600 !important;
+  color: var(--foreground);
+  border-bottom: 1px solid var(--border) !important;
+}
+
+.el-date-editor {
+  --el-datepicker-active-color: var(--primary);
+  --el-datepicker-hover-text-color: var(--primary);
+}
+
+.el-picker-panel {
+  --el-color-primary: var(--primary);
+  --el-datepicker-active-color: var(--primary);
+  --el-datepicker-hover-text-color: var(--primary);
+  --el-datepicker-inrange-bg-color: var(--muted);
+  --el-datepicker-inrange-hover-bg-color: var(--border);
+}
+

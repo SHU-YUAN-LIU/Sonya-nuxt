@@ -1,0 +1,51 @@
+.dashboard-container {
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+.device-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+
+  .meter-card,
+  .system-wiring-type,
+  .last-receive-time {
+    padding: 0.15rem 0.75rem;
+    font-size: 1rem;
+    color: #fff;
+  }
+
+  .meter-card {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #00cb86;
+    width: fit-content;
+    border-top-left-radius: $border-radius-sm;
+    border-bottom-left-radius: $border-radius-sm;
+  }
+
+  .system-wiring-type {
+    background-color: #666666;
+    border-top-right-radius: $border-radius-sm;
+    border-bottom-right-radius: $border-radius-sm;
+  }
+
+  .last-receive-time {
+    display: flex;
+    align-items: center;
+    gap: 0.5rem;
+    background-color: #666666;
+    width: fit-content;
+    border-radius: $border-radius-sm;
+    letter-spacing: $letter-spacing-sm;
+  }
+
+  @media (width < 768px) {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+  }
+}
