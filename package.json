@@ -10,7 +10,6 @@
     "postinstall": "nuxt prepare"
   },
   "dependencies": {
-    "@oxc-parser/binding-darwin-arm64": "^0.128.0",
     "@pinia/nuxt": "^0.11.3",
     "better-sqlite3": "^12.10.0",
     "echarts": "^6.1.0",
